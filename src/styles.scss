@@ -1,10 +1,16 @@
-body {
-    color: white;
-}
-
+// @import "../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css";
 @import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 // By doing this, I would not need to add in the style path in angular.json
 // at the same time, I can also override the css within these files (look below)
 // @import "../node_modules/bootstrap/scss/bootstrap.scss"
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background-color: black;
+    color: white;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
