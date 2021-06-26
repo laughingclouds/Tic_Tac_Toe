@@ -3,7 +3,7 @@
 .vscode
 
 # compiled output
-/dist
+# /dist  Need to put this in github
 /tmp
 /out-tsc
 # Only exists if Bazel was run
