@@ -6,3 +6,5 @@ body {
 // By doing this, I would not need to add in the style path in angular.json
 // at the same time, I can also override the css within these files (look below)
 // @import "../node_modules/bootstrap/scss/bootstrap.scss"
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

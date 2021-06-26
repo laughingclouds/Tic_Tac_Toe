@@ -1,0 +1,31 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+}
+
+@function return_val($name, $index) {
+    @if $name=='c' {
+        // this will return the column `square` should be in
+        @return ($index % 3 + 1);
+    }
+    @else {
+        // I know it's messy...leave me alone
+        @if $index <=2 {
+            @return 1;
+        }
+        @else if $index <=5 {
+            @return 2;
+        }
+        @else {
+            @return 3;
+        }
+    }
+}
+
+@for $i from 0 to 8 {
+    .wrapper-#{$i} {
+        grid-column: return_val('c', $i);
+        grid-row: return_val('r', $i);
+    }
+}
