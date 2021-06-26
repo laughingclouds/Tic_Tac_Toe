@@ -1,1 +1,8 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    color: white;
+}
+
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+// By doing this, I would not need to add in the style path in angular.json
+// at the same time, I can also override the css within these files (look below)
+// @import "../node_modules/bootstrap/scss/bootstrap.scss"
